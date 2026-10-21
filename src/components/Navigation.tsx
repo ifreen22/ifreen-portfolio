@@ -12,6 +12,13 @@ const navLinks = [
   { href: '#proof-center', label: 'Evidence Hub' },
 ];
 
+const mobileNavLinks = [
+  ...navLinks.slice(0, 5),
+  { href: '#education', label: 'Education' },
+  ...navLinks.slice(5),
+  { href: '#engineering-mindset-title', label: 'Engineering Mindset' },
+];
+
 export const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -74,7 +81,7 @@ export const Navigation = () => {
         {/* MOBILE TOGGLE */}
         <button
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          className="md:hidden p-2 text-white hover:bg-slate-800 rounded-lg transition-colors"
+          className="md:hidden p-2.5 text-white hover:bg-slate-800 rounded-lg transition-colors"
         >
           {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
@@ -85,17 +92,17 @@ export const Navigation = () => {
         {isMobileMenuOpen && (
           <motion.div
             initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: '100vh' }}
+            animate={{ opacity: 1, height: 'calc(100dvh - 4rem)' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden absolute top-full left-0 right-0 bg-slate-900 border-t border-slate-800 shadow-xl overflow-hidden"
+            className="md:hidden absolute top-full left-0 right-0 bg-slate-900 border-t border-slate-800 shadow-xl overflow-y-auto overscroll-contain"
           >
-            <ul className="flex flex-col p-6 space-y-6">
-              {navLinks.map((link) => (
+            <ul className="flex flex-col p-5 space-y-3">
+              {mobileNavLinks.map((link) => (
                 <li key={link.href}>
                   <a
                     href={link.href}
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className="block text-lg font-medium text-slate-300 hover:text-white hover:pl-2 transition-all"
+                    className="flex min-h-11 items-center text-lg font-medium text-slate-300 hover:text-white hover:pl-2 transition-all"
                   >
                     {link.label}
                   </a>
@@ -105,7 +112,7 @@ export const Navigation = () => {
                 <a
                   href="#contact"
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="block w-full text-center py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold rounded-lg"
+                  className="flex min-h-11 w-full items-center justify-center text-center py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold rounded-lg"
                 >
                   Let's Connect
                 </a>

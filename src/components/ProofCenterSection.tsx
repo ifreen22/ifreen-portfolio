@@ -156,7 +156,7 @@ export const ProofCenterSection = () => {
     <section
       id="proof-center"
       aria-label="Engineering Proof Center"
-      className="relative bg-white pt-24 pb-12 md:pt-32 md:pb-16 px-6 md:px-12 border-t border-slate-200/60 overflow-hidden"
+      className="relative bg-white pt-14 sm:pt-20 pb-8 sm:pb-12 md:pt-32 md:pb-16 px-5 sm:px-6 md:px-12 border-t border-slate-200/60 overflow-hidden"
     >
       {/* Background Subtle Gradient */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
@@ -173,7 +173,7 @@ export const ProofCenterSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center max-w-3xl mx-auto mb-16"
+          className="text-center max-w-3xl mx-auto mb-10 sm:mb-16"
         >
           {/* Eyebrow Badge */}
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-100 border border-slate-200/80 text-blue-700 text-xs font-semibold tracking-wider uppercase mb-4 shadow-xs">
@@ -193,7 +193,7 @@ export const ProofCenterSection = () => {
         {/* ========================================================
             2. VERIFICATION BENTO GRID
         ======================================================== */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 mb-10 sm:mb-16">
           {proofData.map((item, index) => {
             const Icon = item.icon;
             return (
@@ -237,7 +237,7 @@ export const ProofCenterSection = () => {
                     href={item.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 text-xs font-bold text-blue-600 hover:text-blue-800 transition-colors group-hover:translate-x-0.5"
+                    className="inline-flex min-h-11 items-center gap-1.5 text-xs font-bold text-blue-600 hover:text-blue-800 transition-colors group-hover:translate-x-0.5 sm:min-h-0"
                   >
                     <span>{item.actionText}</span>
                     <ExternalLink className="w-3.5 h-3.5" />
@@ -260,7 +260,7 @@ export const ProofCenterSection = () => {
           </div>
           <a
             href="#contact"
-            className="inline-flex items-center gap-1.5 rounded-lg bg-white px-3 py-2 font-bold text-slate-900 ring-1 ring-slate-200 transition-colors hover:bg-blue-50 hover:text-blue-700 shrink-0"
+            className="inline-flex min-h-11 items-center gap-1.5 rounded-lg bg-white px-3 py-2 font-bold text-slate-900 ring-1 ring-slate-200 transition-colors hover:bg-blue-50 hover:text-blue-700 shrink-0 sm:min-h-0"
           >
             Request Additional References →
           </a>

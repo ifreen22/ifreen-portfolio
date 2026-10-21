@@ -222,7 +222,7 @@ export const AchievementsSection = () => {
     <section
       id="certifications"
       aria-labelledby="achievements-heading"
-      className="bg-white px-6 py-20 sm:py-24 md:px-12"
+      className="bg-white px-5 sm:px-6 py-14 sm:py-20 md:px-12 md:py-24"
     >
       <div className="mx-auto max-w-[1200px]">
         <motion.header
@@ -230,7 +230,7 @@ export const AchievementsSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.4 }}
-          className="mb-12 max-w-3xl"
+          className="mb-9 sm:mb-12 max-w-3xl"
         >
           <p className={sectionHeading}>External validation</p>
           <h2
@@ -244,7 +244,7 @@ export const AchievementsSection = () => {
           </p>
         </motion.header>
 
-        <div className="mb-16 grid grid-cols-2 divide-x divide-slate-200 border-y border-slate-200 py-5 sm:grid-cols-3 lg:grid-cols-5">
+        <div className="mb-10 sm:mb-16 grid grid-cols-2 divide-x divide-slate-200 border-y border-slate-200 py-4 sm:py-5 sm:grid-cols-3 lg:grid-cols-5">
           {metrics.map((metric) => (
             <div key={metric.label} className="px-4 py-3 first:pl-0">
               <p className="achievement-metric-value text-2xl font-semibold tracking-tight text-slate-950 sm:text-[28px]">
@@ -289,7 +289,7 @@ export const AchievementsSection = () => {
                         href={item.link.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-1.5 text-sm font-medium text-blue-700 hover:text-blue-900"
+                        className="inline-flex min-h-11 items-center gap-1.5 text-sm font-medium text-blue-700 hover:text-blue-900 sm:min-h-0"
                       >
                         {item.link.label}
                         <ExternalLink className="h-3.5 w-3.5" />
@@ -302,7 +302,7 @@ export const AchievementsSection = () => {
           </div>
         </section>
 
-        <section aria-labelledby="leadership-impact" className="mb-16">
+        <section aria-labelledby="leadership-impact" className="mb-10 sm:mb-16">
           <SectionTitle id="leadership-impact">Leadership &amp; Community Impact</SectionTitle>
           <div className="mt-5 grid gap-4 md:grid-cols-3">
             {leadershipItems.map((item, index) => (
@@ -322,7 +322,7 @@ export const AchievementsSection = () => {
           </div>
         </section>
 
-        <section aria-labelledby="research-innovation" className="mb-16">
+        <section aria-labelledby="research-innovation" className="mb-10 sm:mb-16">
           <SectionTitle id="research-innovation">Research &amp; Innovation</SectionTitle>
           <div className="relative mt-5">
             <div className="absolute bottom-5 left-[7px] top-5 w-px bg-slate-200" />
@@ -352,7 +352,7 @@ export const AchievementsSection = () => {
                         href={item.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-1 text-sm font-medium text-blue-700 hover:text-blue-900"
+                        className="inline-flex min-h-11 items-center gap-1 text-sm font-medium text-blue-700 hover:text-blue-900 sm:min-h-0"
                       >
                         {item.linkLabel}
                         <ExternalLink className="h-3.5 w-3.5" />
@@ -365,7 +365,7 @@ export const AchievementsSection = () => {
           </div>
         </section>
 
-        <section aria-labelledby="technical-certifications" className="mb-16">
+        <section aria-labelledby="technical-certifications" className="mb-10 sm:mb-16">
           <div className="flex flex-wrap items-end justify-between gap-3">
             <div>
               <SectionTitle id="technical-certifications">Technical Certifications</SectionTitle>
@@ -377,7 +377,7 @@ export const AchievementsSection = () => {
               href={evidenceArchive}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 text-sm font-medium text-blue-700 hover:text-blue-900"
+              className="inline-flex min-h-11 items-center gap-1.5 text-sm font-medium text-blue-700 hover:text-blue-900 sm:min-h-0"
             >
               Open certificate archive
               <ExternalLink className="h-3.5 w-3.5" />
@@ -408,7 +408,7 @@ export const AchievementsSection = () => {
                   href={evidenceArchive}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-3 inline-flex items-center gap-1 text-xs font-medium text-blue-700 hover:text-blue-900"
+                  className="mt-3 inline-flex min-h-11 items-center gap-1 text-xs font-medium text-blue-700 hover:text-blue-900 sm:min-h-0"
                 >
                   Verify
                   <ExternalLink className="h-3 w-3" />
@@ -477,7 +477,7 @@ export const AchievementsSection = () => {
                               href={milestone.link.href}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-blue-700 hover:text-blue-900"
+                              className="mt-4 inline-flex min-h-11 items-center gap-1.5 text-sm font-medium text-blue-700 hover:text-blue-900 sm:min-h-0"
                             >
                               {milestone.link.label}
                               <ExternalLink className="h-3.5 w-3.5" />

@@ -175,7 +175,7 @@ export const HeroSection = () => {
     <section
       id="home"
       aria-label="Hero"
-      className="relative min-h-screen flex flex-col justify-between pt-28 pb-0 overflow-hidden bg-slate-50"
+      className="relative min-h-screen max-sm:min-h-0 flex flex-col justify-between pt-24 sm:pt-28 pb-0 overflow-hidden bg-slate-50"
     >
       {/* Background Ambience */}
       <div className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none">
@@ -188,7 +188,7 @@ export const HeroSection = () => {
       </div>
 
       {/* MAIN CONTAINER */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 w-full my-auto pt-2 pb-6">
+      <div className="relative z-10 max-w-7xl mx-auto px-5 sm:px-6 md:px-12 w-full my-auto pt-2 pb-6">
         {/* Two-column layout with Left (Identity, CTAs & 6 Badges) and Right (Photo Gallery) */}
         <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-start">
           {/* ========================================================
@@ -246,7 +246,7 @@ export const HeroSection = () => {
               <div className="flex flex-wrap items-center gap-3">
                 <a
                   href="#projects"
-                  className="px-6 py-2.5 bg-slate-900 hover:bg-blue-600 text-white rounded-xl font-bold text-xs uppercase tracking-wider transition-all duration-300 shadow-md hover:shadow-lg hover:shadow-blue-500/20 hover:-translate-y-0.5 flex items-center gap-2 group cursor-pointer"
+                  className="inline-flex min-h-11 items-center gap-2 px-6 py-2.5 bg-slate-900 hover:bg-blue-600 text-white rounded-xl font-bold text-xs uppercase tracking-wider transition-all duration-300 shadow-md hover:shadow-lg hover:shadow-blue-500/20 hover:-translate-y-0.5 group cursor-pointer sm:min-h-0"
                 >
                   <span>Explore Projects</span>
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -255,7 +255,7 @@ export const HeroSection = () => {
                 <button
                   type="button"
                   onClick={() => setIsResumeModalOpen(true)}
-                  className="px-6 py-2.5 bg-white hover:bg-slate-50 border border-slate-300 text-slate-800 rounded-xl font-bold text-xs uppercase tracking-wider transition-all duration-300 shadow-xs hover:border-slate-400 hover:-translate-y-0.5 flex items-center gap-2 cursor-pointer"
+                  className="inline-flex min-h-11 items-center gap-2 px-6 py-2.5 bg-white hover:bg-slate-50 border border-slate-300 text-slate-800 rounded-xl font-bold text-xs uppercase tracking-wider transition-all duration-300 shadow-xs hover:border-slate-400 hover:-translate-y-0.5 cursor-pointer sm:min-h-0"
                 >
                   <FileDown className="w-4 h-4 text-slate-600" />
                   <span>Download Resume</span>
@@ -268,7 +268,7 @@ export const HeroSection = () => {
                   href="https://github.com/ifreen22"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-blue-600 transition-colors inline-flex items-center gap-1"
+                  className="hover:text-blue-600 transition-colors inline-flex min-h-11 items-center gap-1 px-1 sm:min-h-0"
                 >
                   GitHub
                 </a>
@@ -277,7 +277,7 @@ export const HeroSection = () => {
                   href="https://www.linkedin.com/in/ifreen"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-blue-600 transition-colors inline-flex items-center gap-1"
+                  className="hover:text-blue-600 transition-colors inline-flex min-h-11 items-center gap-1 px-1 sm:min-h-0"
                 >
                   LinkedIn
                 </a>
@@ -286,7 +286,7 @@ export const HeroSection = () => {
                   href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:8fc07e2c-b354-4cf1-8ee0-cebfb6ccbb1f"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-blue-600 transition-colors inline-flex items-center gap-1"
+                  className="hover:text-blue-600 transition-colors inline-flex min-h-11 items-center gap-1 px-1 sm:min-h-0"
                 >
                   Research
                 </a>
@@ -295,14 +295,14 @@ export const HeroSection = () => {
                   href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:8fc07e2c-b354-4cf1-8ee0-cebfb6ccbb1f"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-blue-600 transition-colors inline-flex items-center gap-1"
+                  className="hover:text-blue-600 transition-colors inline-flex min-h-11 items-center gap-1 px-1 sm:min-h-0"
                 >
                   Patent
                 </a>
                 <span className="text-slate-300">•</span>
                 <a
                   href="mailto:ifreensiddiqui22@gmail.com"
-                  className="hover:text-blue-600 transition-colors inline-flex items-center gap-1"
+                  className="hover:text-blue-600 transition-colors inline-flex min-h-11 items-center gap-1 px-1 sm:min-h-0"
                 >
                   Email
                 </a>
@@ -409,7 +409,7 @@ export const HeroSection = () => {
                     key={tab.id}
                     onClick={() => setActiveTab(tab.id)}
                     aria-pressed={activeTab === tab.id}
-                    className={`px-3 py-1.5 rounded-xl text-[11px] font-bold transition-all whitespace-nowrap cursor-pointer ${
+                    className={`min-h-11 px-3 py-2.5 sm:min-h-0 sm:py-1.5 rounded-xl text-[11px] font-bold transition-all whitespace-nowrap cursor-pointer ${
                       activeTab === tab.id
                         ? 'bg-white text-slate-900 shadow-xs'
                         : 'text-slate-600 hover:text-slate-900 hover:bg-slate-200/80'
@@ -426,7 +426,7 @@ export const HeroSection = () => {
                 <div className="absolute inset-0 rounded-3xl bg-gradient-to-tr from-blue-500/20 via-indigo-500/15 to-purple-500/20 blur-2xl transform group-hover:scale-105 transition-transform duration-700 pointer-events-none" />
 
                 {/* Image Frame - Increased height to ~27-30rem to match the left column seamlessly */}
-                <div className="relative w-full h-[26rem] sm:h-[28.5rem] lg:h-[30.5rem] rounded-3xl overflow-hidden bg-slate-900 shadow-2xl border-4 border-white">
+                <div className="relative w-full h-[20rem] sm:h-[28.5rem] lg:h-[30.5rem] rounded-3xl overflow-hidden bg-slate-900 shadow-2xl border-4 border-white">
                   <AnimatePresence mode="wait">
                     <motion.div
                       key={currentItem.id}
@@ -464,7 +464,7 @@ export const HeroSection = () => {
                     type="button"
                     onClick={() => showAdjacentImage(-1)}
                     aria-label="Show previous gallery image"
-                    className="absolute left-3 top-1/2 z-10 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full border border-white/70 bg-white/85 text-slate-900 shadow-md backdrop-blur transition hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600"
+                    className="absolute left-3 top-1/2 z-10 flex h-11 w-11 sm:h-9 sm:w-9 -translate-y-1/2 items-center justify-center rounded-full border border-white/70 bg-white/85 text-slate-900 shadow-md backdrop-blur transition hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600"
                   >
                     <ChevronLeft className="h-5 w-5" />
                   </button>
@@ -472,7 +472,7 @@ export const HeroSection = () => {
                     type="button"
                     onClick={() => showAdjacentImage(1)}
                     aria-label="Show next gallery image"
-                    className="absolute right-3 top-1/2 z-10 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full border border-white/70 bg-white/85 text-slate-900 shadow-md backdrop-blur transition hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600"
+                    className="absolute right-3 top-1/2 z-10 flex h-11 w-11 sm:h-9 sm:w-9 -translate-y-1/2 items-center justify-center rounded-full border border-white/70 bg-white/85 text-slate-900 shadow-md backdrop-blur transition hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600"
                   >
                     <ChevronRight className="h-5 w-5" />
                   </button>
@@ -561,7 +561,7 @@ export const HeroSection = () => {
               <button
                 type="button"
                 onClick={() => setIsResumeModalOpen(false)}
-                className="absolute right-4 top-4 rounded-lg p-1.5 text-slate-400 hover:bg-slate-100 hover:text-slate-600 transition-colors cursor-pointer"
+                className="absolute right-4 top-4 flex h-11 w-11 items-center justify-center rounded-lg p-1.5 text-slate-400 hover:bg-slate-100 hover:text-slate-600 transition-colors cursor-pointer sm:h-auto sm:w-auto"
               >
                 <X className="h-5 w-5" />
                 <span className="sr-only">Close</span>
@@ -595,7 +595,7 @@ export const HeroSection = () => {
                           href={resume.file}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-flex items-center gap-1.5 rounded-lg border border-slate-300 bg-white px-3 py-2 text-xs font-semibold text-slate-700 transition-colors hover:border-blue-300 hover:text-blue-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
+                          className="inline-flex min-h-11 items-center gap-1.5 rounded-lg border border-slate-300 bg-white px-3 py-2 text-xs font-semibold text-slate-700 transition-colors hover:border-blue-300 hover:text-blue-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 sm:min-h-0"
                         >
                           <Eye className="h-3.5 w-3.5" aria-hidden="true" />
                           View
@@ -603,7 +603,7 @@ export const HeroSection = () => {
                         <a
                           href={resume.file}
                           download={resume.downloadName}
-                          className="inline-flex items-center gap-1.5 rounded-lg bg-slate-900 px-3 py-2 text-xs font-semibold text-white transition-colors hover:bg-blue-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+                          className="inline-flex min-h-11 items-center gap-1.5 rounded-lg bg-slate-900 px-3 py-2 text-xs font-semibold text-white transition-colors hover:bg-blue-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 sm:min-h-0"
                         >
                           <FileDown className="h-3.5 w-3.5" aria-hidden="true" />
                           Download

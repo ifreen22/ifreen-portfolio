@@ -41,7 +41,7 @@ export const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="contact-playfair bg-slate-50 py-24 px-6 overflow-hidden">
+    <section id="contact" className="contact-playfair bg-slate-50 py-14 sm:py-20 md:py-24 px-5 sm:px-6 overflow-hidden">
       <div className="max-w-7xl mx-auto" ref={ref}>
         
         {/* HEADER - TYPOGRAPHY FIXED */}
@@ -138,7 +138,7 @@ export const ContactSection = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="h-full"
           >
-            <div className="bg-white rounded-3xl p-8 border border-slate-200 shadow-xl h-full relative overflow-hidden flex flex-col justify-center">
+            <div className="bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-8 border border-slate-200 shadow-xl h-full relative overflow-hidden flex flex-col justify-center">
                 
                 {isSuccess ? (
                     // SUCCESS MESSAGE

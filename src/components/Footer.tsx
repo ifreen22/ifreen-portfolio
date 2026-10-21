@@ -19,7 +19,7 @@ export const Footer = () => {
           <div className="flex items-center gap-4">
             <a
               href="mailto:ifreensiddiqui22@gmail.com"
-              className="flex items-center justify-center w-10 h-10 rounded-full bg-background/10 hover:bg-primary hover:text-primary-foreground transition-colors"
+              className="flex items-center justify-center w-11 h-11 sm:w-10 sm:h-10 rounded-full bg-background/10 hover:bg-primary hover:text-primary-foreground transition-colors"
               aria-label="Email"
             >
               <Mail size={18} />
@@ -28,7 +28,7 @@ export const Footer = () => {
               href="https://www.linkedin.com/in/ifreen"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center w-10 h-10 rounded-full bg-background/10 hover:bg-primary hover:text-primary-foreground transition-colors"
+              className="flex items-center justify-center w-11 h-11 sm:w-10 sm:h-10 rounded-full bg-background/10 hover:bg-primary hover:text-primary-foreground transition-colors"
               aria-label="LinkedIn"
             >
               <Linkedin size={18} />
@@ -37,7 +37,7 @@ export const Footer = () => {
               href="https://github.com/ifreen22"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center w-10 h-10 rounded-full bg-background/10 hover:bg-primary hover:text-primary-foreground transition-colors"
+              className="flex items-center justify-center w-11 h-11 sm:w-10 sm:h-10 rounded-full bg-background/10 hover:bg-primary hover:text-primary-foreground transition-colors"
               aria-label="GitHub"
             >
               <Github size={18} />
@@ -46,7 +46,7 @@ export const Footer = () => {
               href="https://leetcode.com/u/ifreen2007/"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center w-10 h-10 rounded-full bg-background/10 hover:bg-primary hover:text-primary-foreground transition-colors"
+              className="flex items-center justify-center w-11 h-11 sm:w-10 sm:h-10 rounded-full bg-background/10 hover:bg-primary hover:text-primary-foreground transition-colors"
               aria-label="LeetCode"
             >
               <Code2 size={18} />

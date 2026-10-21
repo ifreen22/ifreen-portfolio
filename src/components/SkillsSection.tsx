@@ -281,7 +281,7 @@ export const SkillsSection = () => {
       id="skills"
       ref={ref}
       aria-label="Engineering Toolkit"
-      className="relative bg-slate-50/60 py-24 md:py-32 px-6 md:px-12 border-t border-slate-200/60 overflow-hidden"
+      className="relative bg-slate-50/60 py-14 sm:py-20 md:py-32 px-5 sm:px-6 md:px-12 border-t border-slate-200/60 overflow-hidden"
     >
       {/* Background Ambience */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
@@ -323,13 +323,13 @@ export const SkillsSection = () => {
           initial={{ opacity: 0, y: 15 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5, delay: 0.15 }}
-          className="flex items-center justify-center flex-wrap gap-2 mb-12"
+          className="flex items-center justify-center flex-wrap gap-2 mb-8 sm:mb-12"
         >
           {filterTabs.map((tab) => (
             <button
               key={tab.id}
               onClick={() => setActiveFilter(tab.id)}
-              className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-200 cursor-pointer ${
+              className={`min-h-11 px-4 py-2.5 sm:min-h-0 sm:py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-200 cursor-pointer ${
                 activeFilter === tab.id
                   ? 'bg-slate-900 text-white shadow-xs scale-102'
                   : 'bg-white text-slate-600 border border-slate-200/80 hover:bg-slate-100 hover:text-slate-900'

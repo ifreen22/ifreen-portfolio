@@ -67,7 +67,7 @@ export const AboutSection = () => {
             transition={{ duration: 0.5 }}
             className="lg:col-span-5 h-full flex flex-col justify-center"
           >
-            <div className="relative w-full h-full min-h-[440px] sm:min-h-[480px] lg:min-h-[520px] rounded-3xl overflow-hidden bg-slate-900 shadow-xl border border-slate-200/90 group">
+            <div className="relative w-full h-full min-h-[320px] sm:min-h-[480px] lg:min-h-[520px] rounded-3xl overflow-hidden bg-slate-900 shadow-xl border border-slate-200/90 group">
               <img
                 src={imgSpeech}
                 alt="Ifreen Siddiqui speaking at an IEEE engineering conclave"

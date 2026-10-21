@@ -8,16 +8,16 @@ import imgSpeech from '@/assets/experience/ieee-speech.jpg';
 
 export const ExperienceSection = () => {
   return (
-    <section id="experience" className="py-24 px-6 bg-white overflow-hidden">
+    <section id="experience" className="py-14 sm:py-20 md:py-24 px-5 sm:px-6 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto">
         
         {/* SECTION HEADER */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-10 sm:mb-16">
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-4xl font-serif font-bold text-slate-900 mb-4"
+            className="text-3xl sm:text-4xl font-serif font-bold text-slate-900 mb-3 sm:mb-4"
           >
             Experience & Leadership
           </motion.h2>
@@ -26,7 +26,7 @@ export const ExperienceSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="font-oleo-script text-lg text-slate-600 max-w-2xl mx-auto"
+            className="font-oleo-script text-base sm:text-lg text-slate-600 max-w-2xl mx-auto"
           >
              Bridging technology and management through large-scale event organization, financial logistics, and community leadership.
           </motion.p>
@@ -37,7 +37,7 @@ export const ExperienceSection = () => {
           <div className="grid lg:grid-cols-2 gap-0">
             
             {/* LEFT: TEXT CONTENT */}
-            <div className="p-8 md:p-12 flex flex-col justify-center">
+            <div className="p-5 sm:p-8 md:p-12 flex flex-col justify-center">
               <div className="flex flex-wrap gap-3 mb-6">
                 <span className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
                   Event Management
@@ -89,7 +89,7 @@ export const ExperienceSection = () => {
               </ul>
               
               {/* Impact Stats */}
-              <div className="flex items-center gap-4 text-sm font-bold text-slate-900 border-t border-slate-200 pt-6">
+              <div className="flex flex-wrap items-center gap-x-4 gap-y-3 text-sm font-bold text-slate-900 border-t border-slate-200 pt-5 sm:pt-6">
                 <div className="flex items-center gap-2">
                     <TrendingUp className="w-5 h-5 text-green-600" />
                     <span>Resource Management</span>
@@ -102,7 +102,7 @@ export const ExperienceSection = () => {
             </div>
 
             {/* RIGHT: IMAGE COLLAGE */}
-            <div className="relative bg-slate-200 min-h-[450px] lg:min-h-full">
+            <div className="relative bg-slate-200 min-h-[320px] sm:min-h-[400px] lg:min-h-full">
               {/* Decorative Overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent z-10 pointer-events-none" />
               

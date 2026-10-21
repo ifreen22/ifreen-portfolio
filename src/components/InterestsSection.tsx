@@ -73,7 +73,7 @@ export const InterestsSection = () => {
   return (
     <section
       aria-labelledby="engineering-mindset-title"
-      className="bg-white px-6 pt-8 pb-20 sm:pt-12 sm:pb-24 md:px-12"
+      className="bg-white px-5 sm:px-6 pt-8 pb-14 sm:pt-12 sm:pb-20 md:px-12 md:pb-24"
     >
       <div className="mx-auto max-w-6xl">
         <motion.header
@@ -81,7 +81,7 @@ export const InterestsSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.4 }}
-          className="mb-12 max-w-3xl"
+          className="mb-9 sm:mb-12 max-w-3xl"
         >
           <p className="text-xs font-semibold uppercase tracking-[0.16em] text-blue-700">
             How I work
@@ -109,7 +109,7 @@ export const InterestsSection = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: '-30px' }}
                 transition={{ duration: 0.35, delay: (index % 2) * 0.06 }}
-                className="group relative overflow-hidden rounded-2xl border border-slate-200/90 bg-white p-5 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-lg hover:shadow-slate-900/[0.06] sm:p-6"
+                className="group relative overflow-hidden rounded-2xl border border-slate-200/90 bg-white p-4 sm:p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-lg hover:shadow-slate-900/[0.06]"
               >
                 <div className="absolute inset-x-6 top-0 h-px origin-left scale-x-0 bg-blue-600 transition-transform duration-300 group-hover:scale-x-100" />
                 <div className="flex items-start gap-4">

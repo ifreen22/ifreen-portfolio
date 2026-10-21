@@ -37,7 +37,7 @@ export const EducationSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="text-center mb-12"
+          className="text-center mb-8 sm:mb-12"
         >
           <h2 className="section-title">Education</h2>
           <p className="section-subtitle max-w-2xl mx-auto">
