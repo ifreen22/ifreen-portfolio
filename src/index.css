@@ -1,8 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=DM+Serif+Display:ital@0;1&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Oleo+Script:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Timmana&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.font-newsreader {
+  font-family: 'Newsreader', Georgia, serif;
+}
+
+.achievement-metric-value {
+  font-family: 'Newsreader', Georgia, serif;
+}
+
+.font-charm {
+  font-family: 'Charm', cursive;
+}
+
+.font-oleo-script {
+  font-family: 'Oleo Script', cursive;
+}
+
+.blue-purple-heading {
+  font-family: 'Playfair Display', Georgia, serif;
+  background: linear-gradient(110deg, #123b78 0%, #35215f 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.experience-highlight-copy {
+  font-family: 'DM Serif Display', Georgia, serif;
+  color: #475569;
+}
+
+.experience-highlight-copy strong {
+  color: inherit;
+  font-weight: 400;
+}
+
+.experience-highlight-copy strong:first-child {
+  font-family: 'Playfair Display', Georgia, serif;
+  color: #0f172a;
+  font-weight: 700;
+}
+
+.font-timmana {
+  font-family: 'Timmana', sans-serif;
+}
 
 @layer base {
   :root {
@@ -182,6 +225,16 @@
       opacity: 1;
       transform: translateY(0);
     }
+  }
+
+  .contact-playfair,
+  .contact-playfair * {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+
+  .contact-playfair input::placeholder,
+  .contact-playfair textarea::placeholder {
+    font-family: 'Playfair Display', Georgia, serif;
   }
 
   @keyframes fadeIn {

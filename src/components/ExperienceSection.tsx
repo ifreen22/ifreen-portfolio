@@ -26,7 +26,7 @@ export const ExperienceSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-slate-600 max-w-2xl mx-auto"
+            className="font-oleo-script text-lg text-slate-600 max-w-2xl mx-auto"
           >
              Bridging technology and management through large-scale event organization, financial logistics, and community leadership.
           </motion.p>
@@ -70,19 +70,19 @@ export const ExperienceSection = () => {
               <ul className="space-y-4 mb-8">
                 <li className="flex items-start gap-3">
                   <div className="mt-1.5 min-w-[6px] h-1.5 rounded-full bg-blue-600" />
-                  <p className="text-slate-700 leading-relaxed text-sm md:text-base">
+                  <p className="experience-highlight-copy text-slate-700 leading-relaxed text-sm md:text-base">
                     <strong>Flagship Event Leadership:</strong> Orchestrated <em>"Tech Pe Charcha"</em> featuring industry expert <em>Naveen Reddy (Telusko)</em>. Managed end-to-end logistics, finances, and crowd control for <strong>500+ attendees</strong>.
                   </p>
                 </li>
                 <li className="flex items-start gap-3">
                   <div className="mt-1.5 min-w-[6px] h-1.5 rounded-full bg-blue-600" />
-                  <p className="text-slate-700 leading-relaxed text-sm md:text-base">
+                  <p className="experience-highlight-copy text-slate-700 leading-relaxed text-sm md:text-base">
                     <strong>Revenue & Strategy:</strong> Executed strategic marketing campaigns and ticket sales, mastering real-world negotiation, persuasion, and brand positioning techniques.
                   </p>
                 </li>
                 <li className="flex items-start gap-3">
                   <div className="mt-1.5 min-w-[6px] h-1.5 rounded-full bg-blue-600" />
-                  <p className="text-slate-700 leading-relaxed text-sm md:text-base">
+                  <p className="experience-highlight-copy text-slate-700 leading-relaxed text-sm md:text-base">
                     <strong>Social Initiative:</strong> Led a technical visit to <em>Girme Vidyalaya</em>, teaching AI & Web Development basics to underprivileged students, bridging the digital divide.
                   </p>
                 </li>
